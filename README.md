@@ -33,6 +33,23 @@ This repository contains a scalable Retrieval-Augmented Generation (RAG) API bui
 - Google Cloud CLI installed
 - Gemini API access
 
+# Comparison of Diabot Versions and AxiomAI
+
+| **Feature**            | **Diabot Version 1**                                      | **Diabot RAG Version 1**                            | **Diabot RAG Version 2**                                          | **AxiomAI**                                                        |
+|-------------------------|----------------------------------------------------------|----------------------------------------------------|-------------------------------------------------------------------|-------------------------------------------------------------------|
+| **Purpose**             | Prototype chatbot based on Groq API.                     | Simple standalone RAG system.                     | Fully integrated RAG system with enhancements.                    | Multi-domain chatbot framework with advanced configuration.        |
+| **Technology**          | Groq API only, no RAG.                                   | Streamlit, basic chunking, no persistence.        | Advanced RAG with Groq fallback and Firebase integration.         | Integrated RAG system, multi-source support.                      |
+| **Authentication**      | ❌ No authentication.                                    | ❌ No authentication.                              | ✅ Authentication with Firebase.                                  | ✅ Authentication and profile management.                         |
+| **Data Storage**        | ❌ Local storage only, no persistence.                   | ❌ No persistence.                                 | ✅ Data stored in Firebase and synchronized.                      | ✅ Cloud storage with real-time syncing.                          |
+| **RAG System**          | ❌ No RAG system.                                        | ✅ Basic RAG with document chunking.              | ✅ Advanced RAG with Groq fallback.                               | ✅ RAG system with multi-domain support.                          |
+| **Response Customization** | ❌ No customization.                                  | ❌ No customization.                               | ✅ Customized responses based on profiles.                        | ✅ Full customization per domain.                                 |
+| **User Profiles**       | ❌ No profile management.                                | ❌ No profile management.                          | ✅ User profiles with synchronization.                            | ✅ User profiles with multi-domain support.                       |
+| **Audio Transcription** | ❌ Not available.                                        | ❌ Not available.                                  | ✅ Audio transcription available.                                 | ✅ Audio transcription available.                                 |
+| **Data Synchronization**| ❌ No synchronization.                                   | ❌ No synchronization.                             | ✅ Real-time data synchronization via Firebase.                   | ✅ Cloud synchronization across platforms.                        |
+| **Deployment**          | Vercel deployment, local processing.                    | Local deployment (localhost).                     | Cloud-based with Firebase deployment.                             | Fully cloud-based with multi-domain support.                      |
+| **Admin Features**      | ❌ No admin features.                                    | ❌ No admin features.                              | ✅ Admin dashboard for configuration and user management.         | ✅ Advanced admin dashboard for multi-domain configurations.      |
+| **Backup & Data Retrieval** | ❌ No backup or retrieval.                           | ❌ No backup.                                      | ✅ Data backup and retrieval via Firebase.                        | ✅ Full backup and data retrieval options.                        |
+
 ## Local Development Setup
 
 1. **Clone the repository**
